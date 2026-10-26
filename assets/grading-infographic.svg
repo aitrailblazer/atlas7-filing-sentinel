@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1680" width="1680" height="1680" role="img" aria-label="Grading the Graders: Muse Spark 1.3 and Muse Spark Open on 179 frozen SEC filings">
-  <rect x="0" y="0" width="1680" height="1680" fill="#FBFBF8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1740" width="1680" height="1740" role="img" aria-label="Grading the Graders: Muse Spark 1.3 and Muse Spark Open compared on 179 frozen SEC filings">
+  <rect x="0" y="0" width="1680" height="1740" fill="#FBFBF8"/>
 
   <!-- ===== Header ===== -->
   <text x="90" y="62" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" letter-spacing="3" fill="#777777">ATLAS-7 FILING SENTINEL &#183; OPEN MODEL GRADING</text>
@@ -27,114 +27,143 @@
   <text x="1590" y="506" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13.5" fill="#9E2A2B">DIFFER &#183; 6</text>
   <line x1="90" y1="536" x2="1590" y2="536" stroke="#CCCCCC" stroke-width="0.5"/>
 
-  <!-- ===== Two arms, small multiples ===== -->
-  <line x1="840" y1="566" x2="840" y2="1298" stroke="#CCCCCC" stroke-width="0.5"/>
+  <!-- ===== Side by side: dumbbell comparison ===== -->
+  <text x="90" y="576" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" letter-spacing="2.5" fill="#777777">SIDE BY SIDE: THE TWO MODELS, METRIC BY METRIC</text>
+  <circle cx="97" cy="606" r="6" fill="#1A1A1A"/>
+  <text x="112" y="612" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#1A1A1A">Muse Spark 1.3 &#183; served</text>
+  <circle cx="437" cy="606" r="6" fill="#FBFBF8" stroke="#1A1A1A" stroke-width="1.5"/>
+  <text x="452" y="612" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#1A1A1A">Muse Spark Open &#183; open weights</text>
+  <text x="1590" y="612" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13.5" fill="#777777">each row on its own scale; the line between the dots is the gap</text>
 
-  <!-- Left arm: Muse Spark 1.3 -->
-  <text x="90" y="584" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="27" fill="#1A1A1A">Muse Spark 1.3</text>
-  <text x="90" y="612" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" letter-spacing="1.5" fill="#777777">SERVED MODEL &#183; META MODEL API</text>
+  <!-- Row 1: agreement -->
+  <text x="90" y="676" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">Agreement with the key</text>
+  <text x="90" y="700" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">percent of 179 filings &#183; scale 0&#8211;100</text>
+  <text x="540" y="676" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">87.7%</text>
+  <text x="1240" y="676" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">85.5%</text>
+  <line x1="580" y1="669" x2="1220" y2="669" stroke="#DDDDDD" stroke-width="0.75"/>
+  <line x1="1127" y1="669" x2="1141" y2="669" stroke="#999999" stroke-width="1"/>
+  <circle cx="1141" cy="669" r="6.5" fill="#1A1A1A"/>
+  <circle cx="1127" cy="669" r="6.5" fill="#FBFBF8" stroke="#1A1A1A" stroke-width="1.5"/>
 
-  <text x="90" y="664" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" letter-spacing="2.5" fill="#777777">AGREEMENT WITH THE KEY</text>
-  <text x="86" y="756" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="92" fill="#1A1A1A">87.7%</text>
-  <text x="90" y="788" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">157 of 179 filings</text>
+  <!-- Row 2: precision -->
+  <text x="90" y="744" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">SIGNAL precision</text>
+  <text x="90" y="768" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">scale 0&#8211;1 &#183; both found the same 12 true signals</text>
+  <text x="540" y="744" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">0.50</text>
+  <text x="1240" y="744" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">0.43</text>
+  <line x1="580" y1="737" x2="1220" y2="737" stroke="#DDDDDD" stroke-width="0.75"/>
+  <line x1="855" y1="737" x2="900" y2="737" stroke="#999999" stroke-width="1"/>
+  <circle cx="900" cy="737" r="6.5" fill="#1A1A1A"/>
+  <circle cx="855" cy="737" r="6.5" fill="#FBFBF8" stroke="#1A1A1A" stroke-width="1.5"/>
 
-  <text x="258" y="838" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#777777">gold \ model</text>
-  <text x="390" y="838" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#9E2A2B">SIGNAL</text>
-  <text x="582" y="838" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#1A1A1A">NO SIGNAL</text>
-  <line x1="90" y1="852" x2="710" y2="852" stroke="#999999" stroke-width="1"/>
+  <!-- Row 3: recall (identical) -->
+  <text x="90" y="812" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">SIGNAL recall</text>
+  <text x="90" y="836" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">scale 0&#8211;1 &#183; the same 12 found, the same 8 missed</text>
+  <text x="540" y="812" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">0.60</text>
+  <text x="1240" y="812" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">0.60</text>
+  <line x1="580" y1="805" x2="1220" y2="805" stroke="#DDDDDD" stroke-width="0.75"/>
+  <circle cx="964" cy="805" r="11" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+  <circle cx="964" cy="805" r="6.5" fill="#1A1A1A"/>
+  <text x="990" y="811" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13.5" fill="#777777">identical</text>
 
-  <text x="258" y="896" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">SIGNAL</text>
-  <text x="390" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">12</text>
-  <text x="582" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#9E2A2B">8</text>
-  <line x1="90" y1="910" x2="710" y2="910" stroke="#DDDDDD" stroke-width="0.5"/>
+  <!-- Row 4: false-confident rate -->
+  <text x="90" y="880" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">False-confident rate</text>
+  <text x="90" y="904" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">percent &#183; scale 0&#8211;100 &#183; higher is worse</text>
+  <text x="540" y="880" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">12.3%</text>
+  <text x="1240" y="880" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">14.5%</text>
+  <line x1="580" y1="873" x2="1220" y2="873" stroke="#DDDDDD" stroke-width="0.75"/>
+  <line x1="659" y1="873" x2="673" y2="873" stroke="#999999" stroke-width="1"/>
+  <circle cx="659" cy="873" r="6.5" fill="#1A1A1A"/>
+  <circle cx="673" cy="873" r="6.5" fill="#FBFBF8" stroke="#1A1A1A" stroke-width="1.5"/>
 
-  <text x="258" y="952" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">NO SIGNAL</text>
-  <text x="390" y="956" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#9E2A2B">12</text>
-  <text x="582" y="956" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">145</text>
-  <line x1="90" y1="966" x2="710" y2="966" stroke="#DDDDDD" stroke-width="0.5"/>
+  <!-- Row 5: latency -->
+  <text x="90" y="948" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">Mean latency</text>
+  <text x="90" y="972" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">seconds per call &#183; scale 0&#8211;10</text>
+  <text x="540" y="948" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">5.58 s</text>
+  <text x="1240" y="948" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">6.83 s</text>
+  <line x1="580" y1="941" x2="1220" y2="941" stroke="#DDDDDD" stroke-width="0.75"/>
+  <line x1="937" y1="941" x2="1017" y2="941" stroke="#999999" stroke-width="1"/>
+  <circle cx="937" cy="941" r="6.5" fill="#1A1A1A"/>
+  <circle cx="1017" cy="941" r="6.5" fill="#FBFBF8" stroke="#1A1A1A" stroke-width="1.5"/>
 
-  <text x="258" y="1008" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">ABSTAIN</text>
-  <text x="390" y="1012" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">0</text>
-  <text x="582" y="1012" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">2<tspan font-size="18" dy="-12">&#8224;</tspan></text>
-  <line x1="90" y1="1022" x2="710" y2="1022" stroke="#999999" stroke-width="1"/>
-  <text x="90" y="1050" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">&#8224; Both gold-ABSTAIN filings were returned as NO SIGNAL, at 0.92 and 0.95.</text>
+  <!-- Row 6: cost per filing -->
+  <text x="90" y="1016" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">Cost per graded filing</text>
+  <text x="90" y="1040" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">cents at list prices &#183; scale 0&#8211;2</text>
+  <text x="540" y="1016" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">1.2&#162;</text>
+  <text x="1240" y="1016" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20" fill="#1A1A1A">1.3&#162;</text>
+  <line x1="580" y1="1009" x2="1220" y2="1009" stroke="#DDDDDD" stroke-width="0.75"/>
+  <line x1="964" y1="1009" x2="996" y2="1009" stroke="#999999" stroke-width="1"/>
+  <circle cx="964" cy="1009" r="6.5" fill="#1A1A1A"/>
+  <circle cx="996" cy="1009" r="6.5" fill="#FBFBF8" stroke="#1A1A1A" stroke-width="1.5"/>
 
-  <text x="90" y="1102" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" letter-spacing="2.5" fill="#777777">PRECISION AND RECALL, SIGNAL CLASS</text>
-  <text x="90" y="1140" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">SIGNAL precision <tspan font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20">0.50</tspan> <tspan fill="#777777">(12 of 24 calls)</tspan></text>
-  <rect x="90" y="1154" width="280" height="10" fill="#1A1A1A"/>
-  <line x1="90" y1="1164" x2="650" y2="1164" stroke="#BBBBBB" stroke-width="0.5"/>
-  <text x="90" y="1206" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">SIGNAL recall <tspan font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20">0.60</tspan> <tspan fill="#777777">(12 of 20 gold)</tspan></text>
-  <rect x="90" y="1220" width="336" height="10" fill="#1A1A1A"/>
-  <line x1="90" y1="1230" x2="650" y2="1230" stroke="#BBBBBB" stroke-width="0.5"/>
+  <line x1="90" y1="1064" x2="1590" y2="1064" stroke="#CCCCCC" stroke-width="0.5"/>
 
-  <text x="90" y="1272" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" fill="#333333">180 calls, none failed &#183; 1,171,914 tokens</text>
-  <text x="90" y="1298" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" fill="#333333">Mean latency 5.58 s &#183; $2.16 the run, about $0.012 per filing</text>
+  <!-- ===== Confusion tables, small multiples ===== -->
+  <line x1="840" y1="1092" x2="840" y2="1380" stroke="#CCCCCC" stroke-width="0.5"/>
 
-  <!-- Right arm: Muse Spark Open -->
-  <text x="885" y="584" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="27" fill="#1A1A1A">Muse Spark Open</text>
-  <text x="885" y="612" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" letter-spacing="1.5" fill="#777777">OPEN WEIGHTS &#183; BASETEN</text>
+  <text x="90" y="1112" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="22" fill="#1A1A1A">Muse Spark 1.3 <tspan font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" fill="#777777">&#183; 87.7% &#183; 157 of 179</tspan></text>
+  <text x="258" y="1152" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#777777">gold \ model</text>
+  <text x="390" y="1152" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#9E2A2B">SIGNAL</text>
+  <text x="582" y="1152" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#1A1A1A">NO SIGNAL</text>
+  <line x1="90" y1="1166" x2="710" y2="1166" stroke="#999999" stroke-width="1"/>
+  <text x="258" y="1206" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">SIGNAL</text>
+  <text x="390" y="1210" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">12</text>
+  <text x="582" y="1210" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#9E2A2B">8</text>
+  <line x1="90" y1="1220" x2="710" y2="1220" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text x="258" y="1254" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">NO SIGNAL</text>
+  <text x="390" y="1258" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#9E2A2B">12</text>
+  <text x="582" y="1258" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">145</text>
+  <line x1="90" y1="1268" x2="710" y2="1268" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text x="258" y="1302" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">ABSTAIN</text>
+  <text x="390" y="1306" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">0</text>
+  <text x="582" y="1306" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">2<tspan font-size="17" dy="-11">&#8224;</tspan></text>
+  <line x1="90" y1="1316" x2="710" y2="1316" stroke="#999999" stroke-width="1"/>
+  <text x="90" y="1342" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">&#8224; Both gold-ABSTAIN filings were returned as NO SIGNAL, at 0.92 and 0.95.</text>
+  <text x="90" y="1380" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15.5" fill="#333333">180 calls, none failed &#183; 1,171,914 tokens &#183; $2.16 the run</text>
 
-  <text x="885" y="664" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" letter-spacing="2.5" fill="#777777">AGREEMENT WITH THE KEY</text>
-  <text x="881" y="756" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="92" fill="#1A1A1A">85.5%</text>
-  <text x="885" y="788" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">153 of 179 filings</text>
+  <text x="885" y="1112" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="22" fill="#1A1A1A">Muse Spark Open <tspan font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" fill="#777777">&#183; 85.5% &#183; 153 of 179</tspan></text>
+  <text x="1053" y="1152" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#777777">gold \ model</text>
+  <text x="1185" y="1152" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#9E2A2B">SIGNAL</text>
+  <text x="1377" y="1152" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#1A1A1A">NO SIGNAL</text>
+  <line x1="885" y1="1166" x2="1505" y2="1166" stroke="#999999" stroke-width="1"/>
+  <text x="1053" y="1206" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">SIGNAL</text>
+  <text x="1185" y="1210" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">12</text>
+  <text x="1377" y="1210" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#9E2A2B">8</text>
+  <line x1="885" y1="1220" x2="1505" y2="1220" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text x="1053" y="1254" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">NO SIGNAL</text>
+  <text x="1185" y="1258" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#9E2A2B">16</text>
+  <text x="1377" y="1258" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">141</text>
+  <line x1="885" y1="1268" x2="1505" y2="1268" stroke="#DDDDDD" stroke-width="0.5"/>
+  <text x="1053" y="1302" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">ABSTAIN</text>
+  <text x="1185" y="1306" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">0</text>
+  <text x="1377" y="1306" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="28" fill="#1A1A1A">2<tspan font-size="17" dy="-11">&#8224;</tspan></text>
+  <line x1="885" y1="1316" x2="1505" y2="1316" stroke="#999999" stroke-width="1"/>
+  <text x="885" y="1342" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">&#8224; Both gold-ABSTAIN filings were returned as NO SIGNAL, at 0.90 and 0.92.</text>
+  <text x="885" y="1380" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15.5" fill="#333333">180 calls, none failed &#183; 1,231,707 tokens &#183; $2.34 the run</text>
 
-  <text x="1053" y="838" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#777777">gold \ model</text>
-  <text x="1185" y="838" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#9E2A2B">SIGNAL</text>
-  <text x="1377" y="838" text-anchor="middle" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#1A1A1A">NO SIGNAL</text>
-  <line x1="885" y1="852" x2="1505" y2="852" stroke="#999999" stroke-width="1"/>
-
-  <text x="1053" y="896" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">SIGNAL</text>
-  <text x="1185" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">12</text>
-  <text x="1377" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#9E2A2B">8</text>
-  <line x1="885" y1="910" x2="1505" y2="910" stroke="#DDDDDD" stroke-width="0.5"/>
-
-  <text x="1053" y="952" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">NO SIGNAL</text>
-  <text x="1185" y="956" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#9E2A2B">16</text>
-  <text x="1377" y="956" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">141</text>
-  <line x1="885" y1="966" x2="1505" y2="966" stroke="#DDDDDD" stroke-width="0.5"/>
-
-  <text x="1053" y="1008" text-anchor="end" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">ABSTAIN</text>
-  <text x="1185" y="1012" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">0</text>
-  <text x="1377" y="1012" text-anchor="middle" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="30" fill="#1A1A1A">2<tspan font-size="18" dy="-12">&#8224;</tspan></text>
-  <line x1="885" y1="1022" x2="1505" y2="1022" stroke="#999999" stroke-width="1"/>
-  <text x="885" y="1050" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#777777">&#8224; Both gold-ABSTAIN filings were returned as NO SIGNAL, at 0.90 and 0.92.</text>
-
-  <text x="885" y="1102" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" letter-spacing="2.5" fill="#777777">PRECISION AND RECALL, SIGNAL CLASS</text>
-  <text x="885" y="1140" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">SIGNAL precision <tspan font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20">0.43</tspan> <tspan fill="#777777">(12 of 28 calls)</tspan></text>
-  <rect x="885" y="1154" width="241" height="10" fill="#1A1A1A"/>
-  <line x1="885" y1="1164" x2="1445" y2="1164" stroke="#BBBBBB" stroke-width="0.5"/>
-  <text x="885" y="1206" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="18" fill="#1A1A1A">SIGNAL recall <tspan font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="20">0.60</tspan> <tspan fill="#777777">(12 of 20 gold)</tspan></text>
-  <rect x="885" y="1220" width="336" height="10" fill="#1A1A1A"/>
-  <line x1="885" y1="1230" x2="1445" y2="1230" stroke="#BBBBBB" stroke-width="0.5"/>
-
-  <text x="885" y="1272" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" fill="#333333">180 calls, none failed &#183; 1,231,707 tokens</text>
-  <text x="885" y="1298" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" fill="#333333">Mean latency 6.83 s &#183; $2.34 the run, about $0.013 per filing</text>
-
-  <line x1="90" y1="1330" x2="1590" y2="1330" stroke="#CCCCCC" stroke-width="0.5"/>
+  <line x1="90" y1="1412" x2="1590" y2="1412" stroke="#CCCCCC" stroke-width="0.5"/>
 
   <!-- ===== Shared findings ===== -->
-  <text x="90" y="1372" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" letter-spacing="2.5" fill="#777777">ABSTENTION, BOTH RUNS</text>
-  <text x="90" y="1404" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">Abstentions: 0 on either run. The lowest verdict</text>
-  <text x="90" y="1430" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">probability anywhere was 0.88, above the 0.85 band,</text>
-  <text x="90" y="1456" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">so every disagreement was confident. False-confident</text>
-  <text x="90" y="1482" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">rate: <tspan font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="19">12.3%</tspan> served, <tspan font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="19">14.5%</tspan> open.</text>
+  <text x="90" y="1452" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" letter-spacing="2.5" fill="#777777">ABSTENTION, BOTH RUNS</text>
+  <text x="90" y="1484" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">Abstentions: 0 on either run. The lowest verdict</text>
+  <text x="90" y="1510" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">probability anywhere was 0.88, above the 0.85 band.</text>
+  <text x="90" y="1536" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">Both gold-ABSTAIN filings were graded anyway, at 0.90+.</text>
 
-  <text x="885" y="1372" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" letter-spacing="2.5" fill="#777777">NULL PROBE, BOTH RUNS</text>
-  <text x="885" y="1404" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">An empty, filing-shaped document, graded by both.</text>
-  <text x="885" y="1430" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">Both returned NO SIGNAL at probability 1.00,</text>
-  <text x="885" y="1456" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">basis &#8216;empty packet&#8217;. Nothing invented.</text>
+  <text x="885" y="1452" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" letter-spacing="2.5" fill="#777777">NULL PROBE, BOTH RUNS</text>
+  <text x="885" y="1484" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">An empty, filing-shaped document, graded by both.</text>
+  <text x="885" y="1510" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">Both returned NO SIGNAL at probability 1.00,</text>
+  <text x="885" y="1536" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">basis &#8216;empty packet&#8217;. Nothing invented.</text>
 
-  <text x="90" y="1524" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">One case, both models: Cloudflare&#8217;s Form 144, gold SIGNAL, clustered insider sales. Reading the document alone, both called it routine paper.</text>
+  <text x="90" y="1584" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" fill="#1A1A1A">One case, both models: Cloudflare&#8217;s Form 144, gold SIGNAL, clustered insider sales. Reading the document alone, both called it routine paper.</text>
 
-  <line x1="90" y1="1556" x2="1590" y2="1556" stroke="#999999" stroke-width="1"/>
+  <line x1="90" y1="1616" x2="1590" y2="1616" stroke="#999999" stroke-width="1"/>
 
   <!-- ===== Receipts ===== -->
-  <text x="90" y="1586" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Freeze commit</tspan>&#8195;834454df (aitrailblazer/coordination)</text>
-  <text x="90" y="1610" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Answer key</tspan>&#8195;Corpus v4, sha256 8126b36c40f13b...</text>
-  <text x="870" y="1586" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Packet rollup</tspan>&#8195;sha256 f3e8fbaa6f190d3f...</text>
-  <text x="870" y="1610" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Null document</tspan>&#8195;sha256 655ade23e918a3f4...</text>
+  <text x="90" y="1646" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Freeze commit</tspan>&#8195;834454df (aitrailblazer/coordination)</text>
+  <text x="90" y="1670" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Answer key</tspan>&#8195;Corpus v4, sha256 8126b36c40f13b...</text>
+  <text x="870" y="1646" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Packet rollup</tspan>&#8195;sha256 f3e8fbaa6f190d3f...</text>
+  <text x="870" y="1670" font-family="Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" fill="#1A1A1A"><tspan fill="#777777">Null document</tspan>&#8195;sha256 655ade23e918a3f4...</text>
 
   <!-- ===== Footer ===== -->
-  <text x="90" y="1648" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="14" font-style="italic" fill="#777777">DeltaSignal &#183; &#169; 2026 AITrailblazer</text>
-  <text x="1590" y="1648" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="14" font-style="italic" fill="#777777">An engine&#8217;s agreement is a published score, never validation of the Decider record.</text>
+  <text x="90" y="1708" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="14" font-style="italic" fill="#777777">DeltaSignal &#183; &#169; 2026 AITrailblazer</text>
+  <text x="1590" y="1708" text-anchor="end" font-family="Georgia, 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif" font-size="14" font-style="italic" fill="#777777">An engine&#8217;s agreement is a published score, never validation of the Decider record.</text>
 </svg>
