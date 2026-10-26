@@ -10,17 +10,21 @@
 ![Agreement](https://img.shields.io/badge/Agreement-87.7%25-0b5fa5)
 ![Freeze](https://img.shields.io/badge/Freeze-commit%20834454df-0b5fa5)
 
-**One-liner:** ATLAS-7 Filing Sentinel is an SEC filing sentinel that grades filings for material signal, with the open models themselves graded against a locked answer key.
+**One-liner:** ATLAS-7 Filing Sentinel is an evaluation system for SEC filings: it evaluates filings for material signal, and it evaluates the AI models that read them, both against a locked answer key.
 
 ## Contents
 
+- [Why we entered](#why-we-entered)
 - [The problem and the workflow](#the-problem-and-the-workflow)
-- [What was built and run during the hackathon](#what-was-built-and-run-during-the-hackathon)
-- [What the results show](#what-the-results-show)
+- [The proof: we graded the engines](#the-proof-we-graded-the-engines)
+- [The demo film](#the-demo-film)
 - [Repository layout](#repository-layout): the [grading harness](harness/), the [demo grading prompt](DEMO-GRADING-PROMPT.md), the [Open Model Grading Card](GRADING-CARD.md), the [freeze receipts](freeze/), and the [sealed demo set](demo-set/)
-- [Demo video outline](#demo-video-outline-3-minutes-maximum)
 - [Links and receipts](#links-and-receipts)
 - [Links](#links)
+
+## Why we entered
+
+We entered for the jury and the deadline, in that order. The jury: this product runs on Meta's models, and its daily work is evaluating them, every graded filing a small judgment on whether the engine read the document the way the desk reads it. Meta's AI leadership has said in public that crafting evals from real product work is where the field's most important problems now sit. An entrant whose core discipline is evaluation belongs in front of that jury, and its verdict, favorable or not, is information we cannot generate for ourselves. The deadline: the frozen exam at the center of this submission exists because this event does. On our own calendar we would have graded the engines eventually and informally; the competition forced the freeze, the locked key, the sealed demo set, and the public card, inside one month and to a standard we intend to keep. The prize would be welcome and is budgeted nowhere in our plans. What we came for is already in this document: a dated, external, checkable measurement of the work, taken by the ecosystem the work is built on.
 
 ## The problem and the workflow
 
@@ -28,40 +32,29 @@ The SEC receives a flood of filings every day. Most of it is routine paper: admi
 
 The Filing Sentinel grades every filing the same way. For each one it returns a verdict, SIGNAL or NO SIGNAL, a probability for each class, and one sentence naming the specific filing content the verdict rests on. A verdict issues only when the engine's top-class probability reaches 0.85. Below that band the engine must abstain, so thin evidence produces no grade instead of a confident guess. The desk then reads only what the sentinel graded as signal, plus whatever it refused to grade, and every verdict carries its basis sentence and its probability, so a human can check the reasoning before acting on it.
 
-## What was built and run during the hackathon
+This is a port of a running production system, not a prototype built for the event. The desk's graded filing record is public and dated, its misses printed at the same size as its wins, and the grading corpus behind it is locked and hash-verified. Filings are also read as steps in sequences, not as isolated documents: a fourth insider sale in four months is a pattern advancing, and the sentinel's scaffolding holds that sequence state, because a raw model reading one document alone cannot.
 
-**A frozen grading harness.** Every engine reads the same 179 filing packets, under the same demo grading prompt, with the same abstain band. Nothing was tuned after the freeze. The sample, the prompt, the band rule, and a per-packet hash manifest were frozen in one commit before any engine saw a packet.
+## The proof: we graded the engines
 
-**Freeze discipline.** The answer key was pinned by hash before the first engine call: Decider corpus v4 finals (20 SIGNAL / 157 NO SIGNAL / 2 ABSTAIN over 179 filings), file sha256 8126b36c40f13bde4ee7e959f292c3b4725ba94deffb5d397281d48359f1bf96. The freeze of record is commit 834454df in aitrailblazer/coordination, path hackathon/open-model-grading/. The key stays home and never ships; only the demo grading prompt goes to any external route.
+Because the product stands on a general engine, we measured the engine, under conditions a skeptic can re-run. Every engine reads the same 179 filing packets, under the same demo grading prompt, with the same abstain band. Nothing was tuned after the freeze. The sample, the prompt, the band rule, and a per-packet hash manifest were frozen in one commit before any engine saw a packet: commit 834454df in aitrailblazer/coordination, path hackathon/open-model-grading/.
 
-**The reference arm.** Muse Spark 1.3 on the Meta Model API graded all 179 packets plus one empty, filing-shaped null document, 180 calls at temperature 0, packets exactly as frozen, on October 26, 2026. The full run took 16 minutes 53 seconds of wall clock with zero failed calls, zero parse failures, and zero malformed verdicts. The largest packet, at 183,823 prompt tokens, was accepted and graded; no packet hit a context limit.
+The answer key was pinned by hash before the first engine call: Decider corpus v4 finals (20 SIGNAL / 157 NO SIGNAL / 2 ABSTAIN over 179 filings), file sha256 8126b36c40f13bde4ee7e959f292c3b4725ba94deffb5d397281d48359f1bf96. The key was built by two independent Muse grading desks working blind, their disagreements ruled on by a fresh judge blind to label origin, and the result locked by a human. The key stays home and never ships; only the demo grading prompt goes to any external route.
 
-**The Open Model Grading Card.** The submission's exhibit is a grading card for the engines, not for the filings. Each engine's verdicts are scored against the locked key, and its agreement is published as the engine's score, next to its misses. Agreement is a score for the engine. It is never validation of the record the key comes from: the key is the ruler, and a ruler is not validated by the things measured with it. See [GRADING-CARD.md](GRADING-CARD.md).
-
-**A sealed demo set.** Ten filings taken from the live EDGAR feed on October 26, 2026, outside the frozen 179, assembled into packets and labeled in-house before any engine saw them. The labels file is sealed by hash (sha256 30d73538229406da1adb51e1c3510a5df6aa78fb8d77a168fdc488ff313b883b) and never ships. The live demo grades these filings on stage and reveals the sealed labels after. See [demo-set/](demo-set/).
-
-## What the results show
+The result is published as the Open Model Grading Card, a grading card for the engines, not for the filings. Each engine's verdicts are scored against the locked key, and its agreement is published as the engine's score, next to its misses. Agreement is a score for the engine. It is never validation of the record the key comes from: the key is the ruler, and a ruler is not validated by the things measured with it.
 
 ![Open Model Grading, both arms: Muse Spark 1.3 agreement 87.7% (157 of 179 packets, scope 38 complete submissions and 141 primary-plus-EX-99), SIGNAL precision 0.50, recall 0.60; Muse Spark Open agreement 85.5% (153 of 179), SIGNAL precision 0.43, recall 0.60; the two models gave the same verdict on 173 of 179 filings (96.6%); abstentions 0 on both runs with lowest verdict probability 0.88; null probe NO SIGNAL at 1.00 on both runs with nothing invented; cost about $0.012 and $0.013 per graded filing at list prices; zero failed calls](assets/grading-infographic.svg)
 
-On the reference arm, Muse Spark 1.3 agreed with the finals on 157 of 179 packets, **87.7%** (corpus scope: 38 complete submissions, 141 at primary-plus-EX-99 scope). The shape underneath the headline is the informative part:
+**The reference arm, Muse Spark 1.3.** On the Meta Model API, Muse Spark 1.3 graded all 179 packets plus one empty, filing-shaped null document, 180 calls at temperature 0, on October 26, 2026. It agreed with the key on 157 of 179 filings, 87.7% (corpus scope: 38 complete submissions, 141 at primary-plus-EX-99 scope). Its SIGNAL precision was 0.50. Its SIGNAL recall was 0.60. It abstained zero times, and the lowest probability on any of its verdicts was 0.88, above the 0.85 band edge, so all 22 of its disagreements with the key were confident disagreements, a false-confident rate of 12.3%, including both gold ABSTAIN filings, which it called NO SIGNAL at 0.92 and 0.95. The null probe passed: given the empty document, it returned NO SIGNAL at probability 1.00 with the basis "empty packet", inventing nothing. The run took 16 minutes 53 seconds with zero failed calls, consumed 1,171,914 tokens, and prices at list rates to $2.16, about $0.012 per graded filing, at a mean latency of 5.58 seconds. The largest packet, at 183,823 prompt tokens, was accepted and graded in a single pass.
 
-- **SIGNAL precision 0.50** (12 true positives, 12 false positives) and **SIGNAL recall 0.60** (12 of 20 gold SIGNAL filings found, 8 missed). The agreement headline is carried by the large NO SIGNAL majority; on the filings that matter most, the engine is at chance-adjacent precision and misses two in five.
-- **The engine never used the abstain band.** It abstained zero times, and the lowest probability attached to any verdict in the run was 0.88, above the 0.85 band edge. Every one of the 22 disagreements with the key was a confident disagreement, including both gold ABSTAIN filings, which the engine called NO SIGNAL at 0.92 and 0.95. The false-confident rate was 12.3%.
-- **The null probe passed.** Given an empty, filing-shaped document, the engine returned NO SIGNAL with p_no_signal 1.00 and the basis "empty packet". It invented no company, no event, and no amount. The noise floor on this route is clean.
-- **Cost and latency.** The run consumed 1,171,914 tokens in total. At the published list price for muse-spark-1.3 (input $1.25 per million tokens, output $4.25 per million, dev.meta.ai pricing page, checked October 26, 2026), that prices to $2.16 for the full run, about **$0.012 per graded filing**, at a mean latency of **5.58 seconds** per call.
+**The contestant arm, Muse Spark Open.** On Baseten, the open-weights Muse Spark Open graded the same 179 packets plus the null document under the same frozen prompt and the same band, on October 26, 2026, charged against the workspace's $5.00 of free Model API credits, with no payment method on file. Muse Spark Open agreed with the key on 153 of 179 filings, 85.5%. Muse Spark Open's SIGNAL precision was 0.43. Muse Spark Open's SIGNAL recall was 0.60, the same 12 gold SIGNAL filings found and the same 8 missed as the reference arm. Muse Spark Open abstained zero times. The lowest probability on any Muse Spark Open verdict was 0.88. All 26 of Muse Spark Open's disagreements with the key were confident, a false-confident rate of 14.5%, including both gold ABSTAIN filings, which it called NO SIGNAL at 0.90 and 0.92. The null probe passed on this route too, NO SIGNAL at probability 1.00, basis "empty packet". The run consumed 1,231,707 tokens and prices at list rates to $2.34, about $0.013 per graded filing, at a mean latency of 6.83 seconds, with zero failed calls.
 
-## The contestant arm: Muse Spark Open on Baseten
+**The mirror.** The two arms gave the same verdict on 173 of 179 filings, 96.6%. They were both wrong on the same 21 filings. The reference arm was wrong alone on 1 filing. The open model was wrong alone on 5 filings. All six differences are gold NO SIGNAL filings where one arm raised a false alarm and the other did not, which is what moves precision from 0.50 to 0.43. Whatever drives the 21 shared disagreements, including the same confident miss on the same Form 144 read by both engines as one routine proposed sale, is common to both routes. It is not a hosting difference, and it is not fixed by choosing the served model over the open one. It is the layer the product exists to supply: sequence knowledge, and an abstention discipline the raw models do not supply on their own. That layer is DeltaSignal's scaffolding, built from the start around the knowledge that a raw model will grade anything put in front of it, confidently, on thin evidence included. It cannot be reconstructed from this submission or from the public card: what we publish is results and receipts, never the corpus, the labels, or the method the scaffolding runs on.
 
-Muse Spark Open, the open-weights model, graded the same 179 packets plus the null document on Baseten, under the same frozen prompt and the same abstain band, on October 26, 2026. No hackathon credit and no payment method were needed: the run was charged against the Baseten workspace's $5.00 of free Model API credits.
+**A sealed demo set.** Ten filings taken from the live EDGAR feed on October 26, 2026, outside the frozen 179, assembled into packets and labeled in-house before any engine saw them. The labels file is sealed by hash (sha256 30d73538229406da1adb51e1c3510a5df6aa78fb8d77a168fdc488ff313b883b) and never ships. The demo film grades these filings live and reveals the sealed labels after.
 
-- **Agreement 85.5%** (153 of 179; corpus scope: 38 complete submissions, 141 at primary-plus-EX-99 scope), against the reference arm's 87.7%. Zero failed calls, zero parse failures, zero malformed verdicts.
-- **SIGNAL precision 0.43** (12 true positives, 16 false positives) and **SIGNAL recall 0.60** (12 of 20 gold SIGNAL filings found, 8 missed). The 12 found and the 8 missed are the exact same filings as on the reference arm.
-- **The engine never used the abstain band either.** Zero abstentions, and the lowest probability attached to any verdict was 0.88, the same floor as the reference arm. Every one of its 26 disagreements with the key was confident, a false-confident rate of 14.5%, including both gold ABSTAIN filings, called NO SIGNAL at 0.90 and 0.92.
-- **The null probe passed on this route too.** NO SIGNAL with p_no_signal 1.00 and the basis "empty packet". Nothing invented.
-- **Cost and latency.** The run consumed 1,231,707 tokens. At the Baseten list price for meta-models/muse-spark-open (input $1.25 per million tokens, output $4.25 per million, Baseten model page, checked October 26, 2026), that prices to $2.34 for the full run, about **$0.013 per graded filing**, at a mean latency of **6.83 seconds** per call.
+## The demo film
 
-**The cross-route comparison is the finding.** The two arms gave the same verdict on 173 of 179 filings (96.6%). They were both wrong on the same 21 filings; the reference arm was wrong alone on 1 filing, the open model wrong alone on 5. The open-versus-served difference on this frozen sample is six filings, and all six are gold NO SIGNAL filings where one arm raised a false alarm and the other did not: five by the open model, one by the reference arm. That false-alarm side is what moves precision from 0.50 to 0.43. The shared disagreements are twenty-one filings and fall in the same places on both arms, including the same confident miss on the same Form 144, read by both engines as one routine proposed sale. Whatever drives those disagreements is common to both routes. It is not a hosting difference, and it is not fixed by choosing the served model over the open one.
+Three minutes, two falsifiable moments. First, the product grades a sealed demo filing live on Muse Spark Open, the sequence panel showing why the document alone misleads, and the sealed label is revealed after the verdict. Second, the product sits out a thin-evidence filing, no grade issued, against the exam's aggregate finding that neither flagship model abstained once in 358 graded filings. The film closes on the Grading Card and the freeze receipts: the record is free, the precision is the product.
 
 ## Repository layout
 
@@ -72,18 +65,11 @@ Muse Spark Open, the open-weights model, graded the same 179 packets plus the nu
 - `freeze/` — the freeze receipts: freeze manifest, per-packet hash manifest (`.md` and `.jsonl`), and the null document.
 - `demo-set/` — the sealed demo set: 10 packets from the live EDGAR feed of October 26, 2026, plus its manifest. The labels are sealed by hash in the manifest and never ship.
 
-## Demo video outline (3 minutes maximum)
-
-- **0:00 to 0:10.** The one-liner on screen over the live product: the Filing Sentinel grades SEC filings in public, prints its misses at the same size as its wins, and refuses to grade when the evidence is thin.
-- **0:10 to 1:20.** Working software, well inside 90 seconds. The sentinel grades one filing from the sealed demo set live: intake, the verdict, the probability, and the one-sentence basis on screen. Then the sealed label for that filing is revealed and checked against the verdict. The seal hash is shown, so the reveal is verifiable rather than staged.
-- **1:20 to 2:10.** A second demo filing where the evidence is thin, graded live, so the audience sees how the sentinel handles a hard case with its probability and basis stated plainly.
-- **2:10 to 3:00.** The Open Model Grading Card: both arms' full results, the 87.7% and 85.5% agreements with their scope line, precision and recall under the headlines, the zero-abstention finding on both arms, the cross-route mirror (the same verdict on 173 of 179 filings, the same 8 SIGNAL filings missed), and the null probe. Close on the freeze commit and the scope line: the record is free, the precision is the product.
-
 ## Links and receipts
 
 - **Freeze of record:** commit 834454df, repository aitrailblazer/coordination, path hackathon/open-model-grading/ (freeze manifest, freeze pack, per-packet hash manifest for all 179 packets and the null document, demo grading prompt).
 - **Answer key pin:** final-labels-corpus-179-v4.jsonl, sha256 8126b36c40f13bde4ee7e959f292c3b4725ba94deffb5d397281d48359f1bf96. The key itself stays home and is not linked.
-- **The exhibit:** the Open Model Grading Card, included inside this submission ([GRADING-CARD.md](GRADING-CARD.md)).
+- **The exhibit:** the Open Model Grading Card ([GRADING-CARD.md](GRADING-CARD.md)).
 - **Demo set seal:** labels sha256 30d73538229406da1adb51e1c3510a5df6aa78fb8d77a168fdc488ff313b883b (labels sealed October 26, 2026, before any engine run; the labels file never ships).
 
 ## Links
