@@ -42,7 +42,7 @@ The Filing Sentinel grades every filing the same way. For each one it returns a 
 
 ## What the results show
 
-![Open Model Grading, reference arm results: agreement 87.7% (157 of 179 packets, scope 38 complete submissions and 141 primary-plus-EX-99), SIGNAL precision 0.50, SIGNAL recall 0.60, abstentions 0 with lowest verdict probability 0.88, false-confident rate 12.3%, null probe NO SIGNAL at 1.00 with nothing invented, cost about $0.012 per graded filing at list price, mean latency 5.58 seconds, zero failed calls](assets/grading-infographic.svg)
+![Open Model Grading, both arms: Muse Spark 1.3 agreement 87.7% (157 of 179 packets, scope 38 complete submissions and 141 primary-plus-EX-99), SIGNAL precision 0.50, recall 0.60; Muse Spark Open agreement 85.5% (153 of 179), SIGNAL precision 0.43, recall 0.60; the two models gave the same verdict on 173 of 179 filings (96.6%); abstentions 0 on both runs with lowest verdict probability 0.88; null probe NO SIGNAL at 1.00 on both runs with nothing invented; cost about $0.012 and $0.013 per graded filing at list prices; zero failed calls](assets/grading-infographic.svg)
 
 On the reference arm, Muse Spark 1.3 agreed with the finals on 157 of 179 packets, **87.7%** (corpus scope: 38 complete submissions, 141 at primary-plus-EX-99 scope). The shape underneath the headline is the informative part:
 
