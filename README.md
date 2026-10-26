@@ -1,9 +1,26 @@
+<img src="assets/deltasignal-logo.png" width="180" alt="DeltaSignal">
+
 # ATLAS-7 Filing Sentinel
 
 **Meta Global AI Developer Hackathon, Startup track.**
 
+![Event](https://img.shields.io/badge/Event-Meta%20Global%20AI%20Developer%20Hackathon-0b5fa5)
+![Track](https://img.shields.io/badge/Track-Startup-0b5fa5)
+![Reference arm](https://img.shields.io/badge/Reference%20arm-Muse%20Spark%201.3-0b5fa5)
+![Agreement](https://img.shields.io/badge/Agreement-87.7%25-0b5fa5)
+![Freeze](https://img.shields.io/badge/Freeze-commit%20834454df-0b5fa5)
 
 **One-liner:** ATLAS-7 Filing Sentinel is an SEC filing sentinel that grades filings for material signal, with the open models themselves graded against a locked answer key.
+
+## Contents
+
+- [The problem and the workflow](#the-problem-and-the-workflow)
+- [What was built and run during the hackathon](#what-was-built-and-run-during-the-hackathon)
+- [What the results show](#what-the-results-show)
+- [Repository layout](#repository-layout): the [grading harness](harness/), the [demo grading prompt](DEMO-GRADING-PROMPT.md), the [Open Model Grading Card](GRADING-CARD.md), the [freeze receipts](freeze/), and the [sealed demo set](demo-set/)
+- [Demo video outline](#demo-video-outline-3-minutes-maximum)
+- [Links and receipts](#links-and-receipts)
+- [Links](#links)
 
 ## The problem and the workflow
 
@@ -24,6 +41,8 @@ The Filing Sentinel grades every filing the same way. For each one it returns a 
 **A sealed demo set.** Ten filings taken from the live EDGAR feed on October 26, 2026, outside the frozen 179, assembled into packets and labeled in-house before any engine saw them. The labels file is sealed by hash (sha256 30d73538229406da1adb51e1c3510a5df6aa78fb8d77a168fdc488ff313b883b) and never ships. The live demo grades these filings on stage and reveals the sealed labels after. See [demo-set/](demo-set/).
 
 ## What the results show
+
+![Open Model Grading, reference arm results: agreement 87.7% (157 of 179 packets, scope 38 complete submissions and 141 primary-plus-EX-99), SIGNAL precision 0.50, SIGNAL recall 0.60, abstentions 0 with lowest verdict probability 0.88, false-confident rate 12.3%, null probe NO SIGNAL at 1.00 with nothing invented, cost about $0.012 per graded filing at list price, mean latency 5.58 seconds, zero failed calls](assets/grading-infographic.svg)
 
 On the reference arm, Muse Spark 1.3 agreed with the finals on 157 of 179 packets, **87.7%** (corpus scope: 38 complete submissions, 141 at primary-plus-EX-99 scope). The shape underneath the headline is the informative part:
 
@@ -59,3 +78,15 @@ On the reference arm, Muse Spark 1.3 agreed with the finals on 157 of 179 packet
 - **The exhibit:** the Open Model Grading Card, included inside this submission ([GRADING-CARD.md](GRADING-CARD.md)).
 - **Demo set seal:** labels sha256 30d73538229406da1adb51e1c3510a5df6aa78fb8d77a168fdc488ff313b883b (labels sealed October 26, 2026, before any engine run; the labels file never ships).
 
+## Links
+
+- AITrailblazer: https://aitrailblazer.com
+- The public filings record: https://atlas7.app
+- X: https://x.com/AITrailblazerQ
+- DeltaSignal on Substack: https://deltasignal.substack.com
+
+---
+
+© 2026 AITrailblazer. The ATLAS-7 Filing Sentinel and the Open Model Grading Card are publications of DeltaSignal.
+
+Judge the record, not the story: every figure in this repository traces to a frozen receipt listed under freeze/.

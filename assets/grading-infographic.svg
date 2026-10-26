@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 600" width="880" height="600" role="img" aria-label="Open Model Grading reference arm results">
+  <rect x="0" y="0" width="880" height="600" fill="#f7f7f4"/>
+  <rect x="0" y="0" width="880" height="6" fill="#0b5fa5"/>
+
+  <text x="48" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="3" fill="#0b5fa5">DELTASIGNAL</text>
+  <text x="48" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#1a1a1a">Open Model Grading: Reference Arm</text>
+  <text x="48" y="120" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#555550">Muse Spark 1.3 on the Meta Model API &#183; frozen demo prompt &#183; run 2026-10-26</text>
+
+  <rect x="48" y="146" width="784" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+  <text x="72" y="196" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#0b5fa5">87.7%</text>
+  <text x="262" y="182" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1a1a1a">agreement with the locked finals, 157 of 179 packets</text>
+  <text x="262" y="208" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#555550">Scope: 38 complete submissions / 141 primary-plus-EX-99</text>
+  <text x="262" y="234" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#555550">Sample: 179 packets + 1 null document &#183; zero failed calls</text>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="48" y="288" width="248" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+    <text x="68" y="322" font-size="13" letter-spacing="1" fill="#555550">SIGNAL PRECISION</text>
+    <text x="68" y="364" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#1a1a1a">0.50</text>
+    <text x="68" y="390" font-size="13" fill="#555550">share of SIGNAL calls the key confirms</text>
+
+    <rect x="316" y="288" width="248" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+    <text x="336" y="322" font-size="13" letter-spacing="1" fill="#555550">SIGNAL RECALL</text>
+    <text x="336" y="364" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#1a1a1a">0.60</text>
+    <text x="336" y="390" font-size="13" fill="#555550">share of gold SIGNAL filings found</text>
+
+    <rect x="584" y="288" width="248" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+    <text x="604" y="322" font-size="13" letter-spacing="1" fill="#555550">ABSTENTIONS</text>
+    <text x="604" y="364" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#1a1a1a">0</text>
+    <text x="604" y="390" font-size="13" fill="#555550">lowest verdict probability 0.88</text>
+
+    <rect x="48" y="430" width="248" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+    <text x="68" y="464" font-size="13" letter-spacing="1" fill="#555550">FALSE-CONFIDENT RATE</text>
+    <text x="68" y="506" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#1a1a1a">12.3%</text>
+    <text x="68" y="532" font-size="13" fill="#555550">confident verdicts the key rejects</text>
+
+    <rect x="316" y="430" width="248" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+    <text x="336" y="464" font-size="13" letter-spacing="1" fill="#555550">NULL PROBE</text>
+    <text x="336" y="506" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#1a1a1a">NO SIGNAL at 1.00</text>
+    <text x="336" y="532" font-size="13" fill="#555550">empty packet: nothing invented</text>
+
+    <rect x="584" y="430" width="248" height="118" fill="#ffffff" stroke="#d8d8d2" stroke-width="1"/>
+    <text x="604" y="464" font-size="13" letter-spacing="1" fill="#555550">COST AND LATENCY</text>
+    <text x="604" y="506" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#1a1a1a">$0.012 / filing</text>
+    <text x="604" y="532" font-size="13" fill="#555550">at list price &#183; mean latency 5.58 s</text>
+  </g>
+
+  <text x="48" y="582" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#888880">Agreement is a score for the engine, never validation of the record the key comes from.</text>
+</svg>
