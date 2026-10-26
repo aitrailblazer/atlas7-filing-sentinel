@@ -51,9 +51,17 @@ On the reference arm, Muse Spark 1.3 agreed with the finals on 157 of 179 packet
 - **The null probe passed.** Given an empty, filing-shaped document, the engine returned NO SIGNAL with p_no_signal 1.00 and the basis "empty packet". It invented no company, no event, and no amount. The noise floor on this route is clean.
 - **Cost and latency.** The run consumed 1,171,914 tokens in total. At the published list price for muse-spark-1.3 (input $1.25 per million tokens, output $4.25 per million, dev.meta.ai pricing page, checked October 26, 2026), that prices to $2.16 for the full run, about **$0.012 per graded filing**, at a mean latency of **5.58 seconds** per call.
 
-## [PENDING: contestant arm, Muse Spark Open on Baseten]
+## The contestant arm: Muse Spark Open on Baseten
 
-[PENDING: to be completed when the Baseten credit lands. Muse Spark Open will grade the same 179 packets plus the null document, under the same frozen prompt and the same abstain band. This section will print its agreement, SIGNAL precision, SIGNAL recall, abstentions, false-confident rate, tokens, latency, and cost per graded filing next to the reference arm above, plus the cross-route comparison: cost and latency per graded filing on each route, and whether the open model's disagreements with the key fall in the same places as the reference arm's.]
+Muse Spark Open, the open-weights model, graded the same 179 packets plus the null document on Baseten, under the same frozen prompt and the same abstain band, on October 26, 2026. No hackathon credit and no payment method were needed: the run was charged against the Baseten workspace's $5.00 of free Model API credits.
+
+- **Agreement 85.5%** (153 of 179; corpus scope: 38 complete submissions, 141 at primary-plus-EX-99 scope), against the reference arm's 87.7%. Zero failed calls, zero parse failures, zero malformed verdicts.
+- **SIGNAL precision 0.43** (12 true positives, 16 false positives) and **SIGNAL recall 0.60** (12 of 20 gold SIGNAL filings found, 8 missed). The 12 found and the 8 missed are the exact same filings as on the reference arm.
+- **The engine never used the abstain band either.** Zero abstentions, and the lowest probability attached to any verdict was 0.88, the same floor as the reference arm. Every one of its 26 disagreements with the key was confident, a false-confident rate of 14.5%, including both gold ABSTAIN filings, called NO SIGNAL at 0.90 and 0.92.
+- **The null probe passed on this route too.** NO SIGNAL with p_no_signal 1.00 and the basis "empty packet". Nothing invented.
+- **Cost and latency.** The run consumed 1,231,707 tokens. At the Baseten list price for meta-models/muse-spark-open (input $1.25 per million tokens, output $4.25 per million, Baseten model page, checked October 26, 2026), that prices to $2.34 for the full run, about **$0.013 per graded filing**, at a mean latency of **6.83 seconds** per call.
+
+**The cross-route comparison is the finding.** The two arms gave the same verdict on 173 of 179 filings (96.6%). They were both wrong on the same 21 filings; the reference arm was wrong alone on 1 filing, the open model wrong alone on 5. The open-versus-served difference on this frozen sample is six filings, and all six are gold NO SIGNAL filings where one arm raised a false alarm and the other did not: five by the open model, one by the reference arm. That false-alarm side is what moves precision from 0.50 to 0.43. The shared disagreements are twenty-one filings and fall in the same places on both arms, including the same confident miss on the same Form 144, read by both engines as one routine proposed sale. Whatever drives those disagreements is common to both routes. It is not a hosting difference, and it is not fixed by choosing the served model over the open one.
 
 ## Repository layout
 
@@ -69,7 +77,7 @@ On the reference arm, Muse Spark 1.3 agreed with the finals on 157 of 179 packet
 - **0:00 to 0:10.** The one-liner on screen over the live product: the Filing Sentinel grades SEC filings in public, prints its misses at the same size as its wins, and refuses to grade when the evidence is thin.
 - **0:10 to 1:20.** Working software, well inside 90 seconds. The sentinel grades one filing from the sealed demo set live: intake, the verdict, the probability, and the one-sentence basis on screen. Then the sealed label for that filing is revealed and checked against the verdict. The seal hash is shown, so the reveal is verifiable rather than staged.
 - **1:20 to 2:10.** A second demo filing where the evidence is thin, graded live, so the audience sees how the sentinel handles a hard case with its probability and basis stated plainly.
-- **2:10 to 3:00.** The Open Model Grading Card: the reference arm's full results, the 87.7% agreement with its scope line, precision and recall under the headline, the zero-abstention finding, and the null probe. Close on the freeze commit and the scope line: the record is free, the precision is the product.
+- **2:10 to 3:00.** The Open Model Grading Card: both arms' full results, the 87.7% and 85.5% agreements with their scope line, precision and recall under the headlines, the zero-abstention finding on both arms, the cross-route mirror (the same verdict on 173 of 179 filings, the same 8 SIGNAL filings missed), and the null probe. Close on the freeze commit and the scope line: the record is free, the precision is the product.
 
 ## Links and receipts
 
