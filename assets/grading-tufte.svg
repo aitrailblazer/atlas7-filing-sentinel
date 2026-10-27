@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 460" width="1120" height="460" role="img" aria-label="Two engines, one frozen exam: grading results for 179 SEC filing packets, October 26, 2026">
+<rect x="0" y="0" width="1120" height="460" fill="#1c211e"/>
+<text x="40" y="40" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="27" font-weight="600" fill="#e0e3df">Two engines, one frozen exam</text>
+<text x="40" y="64" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="12.5" fill="#bccbb9">179 SEC filing packets, frozen before any run &#183; Locked key: 20 SIGNAL / 157 NO SIGNAL / 2 ABSTAIN &#183; Graded October 26, 2026</text>
+<line x1="40" y1="82" x2="1080" y2="82" stroke="#3d4a3d" stroke-width="1"/>
+<line x1="382" y1="98" x2="382" y2="318" stroke="#3d4a3d" stroke-width="1"/>
+<line x1="742" y1="98" x2="742" y2="318" stroke="#3d4a3d" stroke-width="1"/>
+<text x="40" y="108" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="12" letter-spacing="1.2" fill="#bccbb9">AGREEMENT WITH THE LOCKED KEY</text>
+<text x="40" y="140" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="13.5" fill="#e0e3df">Muse Spark 1.3 (reference)</text>
+<rect x="40" y="150" width="166.6" height="17" fill="#4be277"/>
+<text x="215.6" y="164" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="12.5" fill="#e0e3df">87.7% &#183; 157/179</text>
+<text x="40" y="200" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="13.5" fill="#e0e3df">Muse Spark Open (contestant)</text>
+<rect x="40" y="210" width="162.4" height="17" fill="#22c55e"/>
+<text x="211.4" y="224" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="12.5" fill="#e0e3df">85.5% &#183; 153/179</text>
+<line x1="40" y1="248" x2="230" y2="248" stroke="#3d4a3d" stroke-width="1"/>
+<line x1="40.0" y1="248" x2="40.0" y2="253" stroke="#3d4a3d" stroke-width="1"/>
+<text x="40.0" y="268" text-anchor="start" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="10.5" fill="#bccbb9">0</text>
+<line x1="135.0" y1="248" x2="135.0" y2="253" stroke="#3d4a3d" stroke-width="1"/>
+<text x="135.0" y="268" text-anchor="middle" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="10.5" fill="#bccbb9">50</text>
+<line x1="230.0" y1="248" x2="230.0" y2="253" stroke="#3d4a3d" stroke-width="1"/>
+<text x="230.0" y="268" text-anchor="end" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="10.5" fill="#bccbb9">100%</text>
+<text x="402" y="108" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="12" letter-spacing="1.2" fill="#bccbb9">SIGNAL PRECISION AND RECALL</text>
+<line x1="412.0" y1="128" x2="412.0" y2="262" stroke="#3d4a3d" stroke-width="0.7" stroke-dasharray="2 3"/>
+<line x1="532.0" y1="128" x2="532.0" y2="262" stroke="#3d4a3d" stroke-width="0.7" stroke-dasharray="2 3"/>
+<line x1="652.0" y1="128" x2="652.0" y2="262" stroke="#3d4a3d" stroke-width="0.7" stroke-dasharray="2 3"/>
+<text x="402" y="140" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="13.5" fill="#e0e3df">Muse Spark 1.3</text>
+<line x1="412" y1="168" x2="652" y2="168" stroke="#3d4a3d" stroke-width="1"/>
+<circle cx="532.0" cy="168" r="6" fill="#4be277"/>
+<circle cx="556.0" cy="168" r="6" fill="#bccbb9"/>
+<text x="532.0" y="152" text-anchor="middle" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="11" fill="#4be277">precision 0.50</text>
+<text x="556.0" y="190" text-anchor="middle" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="11" fill="#bccbb9">recall 0.60</text>
+<text x="402" y="212" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="13.5" fill="#e0e3df">Muse Spark Open</text>
+<line x1="412" y1="240" x2="652" y2="240" stroke="#3d4a3d" stroke-width="1"/>
+<circle cx="515.2" cy="240" r="6" fill="#4be277"/>
+<circle cx="556.0" cy="240" r="6" fill="#bccbb9"/>
+<text x="515.2" y="224" text-anchor="middle" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="11" fill="#4be277">precision 0.43</text>
+<text x="556.0" y="262" text-anchor="middle" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="11" fill="#bccbb9">recall 0.60</text>
+<text x="412.0" y="286" text-anchor="start" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="10.5" fill="#bccbb9">0</text>
+<text x="532.0" y="286" text-anchor="middle" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="10.5" fill="#bccbb9">0.5</text>
+<text x="652.0" y="286" text-anchor="end" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="10.5" fill="#bccbb9">1.0</text>
+<text x="762" y="108" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="11" letter-spacing="0.7" fill="#bccbb9">THE MIRROR: 179 FILINGS BY JOINT OUTCOME</text>
+<text x="762" y="126" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="12" fill="#bccbb9">Same verdict on 173 of 179 (96.6%)</text>
+<rect x="762.0" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="140.0" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="153.2" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="166.4" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="179.6" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="192.8" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="206.0" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="933.6" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="946.8" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="960.0" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="973.2" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="986.4" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="999.6" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="1012.8" y="219.2" width="10" height="10" fill="#4be277"/>
+<rect x="762.0" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="775.2" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="788.4" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="801.6" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="814.8" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="828.0" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="841.2" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="854.4" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="867.6" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="880.8" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="894.0" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="907.2" y="232.4" width="10" height="10" fill="#4be277"/>
+<rect x="920.4" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="933.6" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="946.8" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="960.0" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="973.2" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="986.4" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="999.6" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="1012.8" y="232.4" width="10" height="10" fill="#e2b04a"/>
+<rect x="762.0" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="775.2" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="788.4" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="801.6" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="814.8" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="828.0" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="841.2" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="854.4" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="867.6" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="880.8" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="894.0" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="907.2" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="920.4" y="245.6" width="10" height="10" fill="#e2b04a"/>
+<rect x="933.6" y="245.6" width="10" height="10" fill="#e0e3df"/>
+<rect x="946.8" y="245.6" width="10" height="10" fill="#bccbb9"/>
+<rect x="960.0" y="245.6" width="10" height="10" fill="#bccbb9"/>
+<rect x="973.2" y="245.6" width="10" height="10" fill="#bccbb9"/>
+<rect x="986.4" y="245.6" width="10" height="10" fill="#bccbb9"/>
+<rect x="999.6" y="245.6" width="10" height="10" fill="#bccbb9"/>
+<rect x="762" y="272" width="9" height="9" fill="#4be277"/>
+<text x="776" y="282" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="11.5" fill="#e0e3df">Both right <tspan font-family='"JetBrains Mono",ui-monospace,monospace' fill="#bccbb9">152</tspan></text>
+<rect x="922" y="272" width="9" height="9" fill="#e2b04a"/>
+<text x="936" y="282" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="11.5" fill="#e0e3df">Both wrong <tspan font-family='"JetBrains Mono",ui-monospace,monospace' fill="#bccbb9">21</tspan></text>
+<rect x="762" y="294" width="9" height="9" fill="#e0e3df"/>
+<text x="776" y="304" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="11.5" fill="#e0e3df">Reference only wrong <tspan font-family='"JetBrains Mono",ui-monospace,monospace' fill="#bccbb9">1</tspan></text>
+<rect x="922" y="294" width="9" height="9" fill="#bccbb9"/>
+<text x="936" y="304" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="11.5" fill="#e0e3df">Open only wrong <tspan font-family='"JetBrains Mono",ui-monospace,monospace' fill="#bccbb9">5</tspan></text>
+<line x1="40" y1="338" x2="1080" y2="338" stroke="#3d4a3d" stroke-width="1"/>
+<text x="40" y="364" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="12.5" fill="#e0e3df">Abstentions: 0 of 358 graded filings &#183; False-confident: 12.3% / 14.5% &#183; Cost per filing: $0.012 / $0.013</text>
+<text x="40" y="386" font-family='"JetBrains Mono",ui-monospace,monospace' font-size="11.5" fill="#bccbb9">Mean latency: 5.58 s / 6.83 s &#183; Null probe: both engines returned NO SIGNAL at probability 1.00 on an empty filing</text>
+<text x="40" y="420" font-family='"Geist",-apple-system,"Segoe UI",Inter,Roboto,sans-serif' font-size="11" fill="#bccbb9">Open Model Grading Card, October 26, 2026. Full card and freeze receipts: github.com/aitrailblazer/atlas7-filing-sentinel</text>
+</svg>
