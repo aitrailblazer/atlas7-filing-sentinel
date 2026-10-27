@@ -75,6 +75,7 @@ Three minutes, two falsifiable moments. First, the product grades a sealed demo 
 ## Links
 
 - AITrailblazer: https://aitrailblazer.com
+- Evaluation engagements: https://aitrailblazer.com/evaluation-services
 - The public filings record: https://atlas7.app
 - X: https://x.com/AITrailblazerQ
 - DeltaSignal on Substack: https://deltasignal.substack.com
