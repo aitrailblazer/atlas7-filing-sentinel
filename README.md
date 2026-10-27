@@ -36,6 +36,16 @@ The Filing Sentinel grades every filing the same way. For each one it returns a 
 
 This is a port of a running production system, not a prototype built for the event. The desk's graded filing record is public and dated, its misses printed at the same size as its wins, and the grading corpus behind it is locked and hash-verified. Filings are also read as steps in sequences, not as isolated documents: a fourth insider sale in four months is a pattern advancing, and the sentinel's scaffolding holds that sequence state, because a raw model reading one document alone cannot.
 
+## Built during the hackathon
+
+This entry builds on ATLAS-7, a running production system: the filing-grading engine, the grading corpus, and the desk's public dated record all pre-date the event and are not claimed as hackathon work. What was created inside the event window:
+
+- The frozen 179-filing grading exam and its lock (October 26): the sample, the demo grading prompt, and the abstain band frozen in one commit (834454df in aitrailblazer/coordination), the answer key pinned by hash before any engine ran.
+- Both grading runs (October 26): Muse Spark 1.3 as the reference arm on the Meta Model API and Muse Spark Open as the contestant arm on Baseten, scored in the Open Model Grading Card in this repository.
+- This public repository and the grading card.
+- The sealed ten-filing demo set, the three demo configurations, and the three-minute demo film; the configurations were re-run on the hackathon build (muse-spark-open-1026) on October 27.
+- The measurement program running this week: a pre-registered abstention measurement on about 2,000 fresh filings and a matched validation of the product's grading method on a newly locked answer key, both designs written and dated before any run, with results published in this repository on October 30.
+
 ## The proof: we graded the engines
 
 Because the product stands on a general engine, we measured the engine, under conditions a skeptic can re-run. Every engine reads the same 179 filing packets, under the same demo grading prompt, with the same abstain band. Nothing was tuned after the freeze. The sample, the prompt, the band rule, and a per-packet hash manifest were frozen in one commit before any engine saw a packet: commit 834454df in aitrailblazer/coordination, path hackathon/open-model-grading/.
