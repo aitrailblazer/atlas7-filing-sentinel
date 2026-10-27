@@ -12,6 +12,8 @@
 
 **One-liner:** ATLAS-7 Filing Sentinel is an evaluation system for SEC filings: it evaluates filings for material signal, and it evaluates the AI models that read them, both against a locked answer key.
 
+![Two engines, one frozen exam: agreement with the locked key (87.7% and 85.5%), SIGNAL precision and recall, and the 179-filing mirror for both grading arms](assets/grading-tufte.svg)
+
 ## Contents
 
 - [Why we entered](#why-we-entered)
