@@ -44,7 +44,7 @@ This entry builds on ATLAS-7, a running production system: the filing-grading en
 - Both grading runs (October 26): Muse Spark 1.3 as the reference arm on the Meta Model API and Muse Spark Open as the contestant arm on Baseten, scored in the Open Model Grading Card in this repository.
 - This public repository and the grading card.
 - The sealed ten-filing demo set, the three demo configurations, and the three-minute demo film; the configurations were re-run on the hackathon build (muse-spark-open-1026) on October 27.
-- The measurement program running this week: a pre-registered abstention measurement on about 2,000 fresh filings and a matched validation of the product's grading method on a newly locked answer key, both designs written and dated before any run, with results published in this repository on October 30.
+- The measurement program, completed: a pre-registered abstention measurement on 1,861 fresh filings and a matched validation of the product's grading method on a newly locked answer key, both designs written and dated (2026-10-28) before any run, with results published in this repository on October 30, 2026: [MEASUREMENT-RESULTS-2026-10-30.md](MEASUREMENT-RESULTS-2026-10-30.md).
 
 ## The proof: we graded the engines
 
