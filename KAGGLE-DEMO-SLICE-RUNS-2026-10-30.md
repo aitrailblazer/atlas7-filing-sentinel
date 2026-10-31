@@ -63,3 +63,37 @@ mechanical and checkable by anyone: the task runs in Kaggle's own tooling,
 the key predates the runs by public hash commitment, and the items a
 frontier model misses are the judgment calls the live desk is built on
 (plan-based versus discretionary insider selling), not parsing failures.
+
+## Second run batch (same evening, October 31, 2026 UTC)
+
+Three more frontier models were run against the unchanged task (version 2)
+at the owner's direction, plus one retry.
+
+| Model | Score | Notes |
+|---|---|---|
+| GPT-6.1 Sol | 8/10 | Missed the Jersey Mike's 13G and the Northern Trust 144 |
+| Claude Opus 5.5 | 7/10 | The only model to abstain: ABSTAIN on the Jersey Mike's 13G and on the Nanobiotix 6-K, both scored against the key; also missed the Northern Trust 144 |
+| Grok 4.6 | ERRORED | Two attempts (02:5x and 03:1x UTC), both errored on Kaggle's model proxy before any verdict was produced; no score recorded, counted here as an errored arm, not a zero |
+
+Updated per-item record for the new arms:
+
+| Accession | Key | GPT-6.1 Sol | Claude Opus 5.5 |
+|---|---|---|---|
+| 0001049521-26-000085 | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+| 0001104659-26-118550 | SIGNAL | SIGNAL | SIGNAL |
+| 0001104659-26-118565 | NO SIGNAL | SIGNAL | ABSTAIN |
+| 0001104659-26-118593 | SIGNAL | SIGNAL | SIGNAL |
+| 0001171843-26-006796 | SIGNAL | SIGNAL | ABSTAIN |
+| 0001193125-26-430860 | SIGNAL | SIGNAL | SIGNAL |
+| 0001193125-26-430977 | SIGNAL | SIGNAL | SIGNAL |
+| 0001628280-26-067128 | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+| 0001959173-26-007482 | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+| 0001959173-26-007483 | SIGNAL | NO SIGNAL | NO SIGNAL |
+
+Across the five scored models, the Northern Trust Form 144 is a universal
+miss (5 of 5 read it NO SIGNAL against the SIGNAL key), and the passive
+Jersey Mike's Schedule 13G splits the field three ways: the two Gemini
+models match the NO SIGNAL key, Claude Sonnet 5 and GPT-6.1 Sol say
+SIGNAL, and Claude Opus 5.5 abstains. Standings after six recorded runs:
+Gemini 3.1 Pro Preview 9/10, Gemini 3.8 Flash 9/10, Claude Sonnet 5 8/10,
+GPT-6.1 Sol 8/10, Claude Opus 5.5 7/10, Grok 4.6 errored.
