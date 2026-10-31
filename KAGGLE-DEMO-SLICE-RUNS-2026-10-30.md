@@ -97,3 +97,24 @@ models match the NO SIGNAL key, Claude Sonnet 5 and GPT-6.1 Sol say
 SIGNAL, and Claude Opus 5.5 abstains. Standings after six recorded runs:
 Gemini 3.1 Pro Preview 9/10, Gemini 3.8 Flash 9/10, Claude Sonnet 5 8/10,
 GPT-6.1 Sol 8/10, Claude Opus 5.5 7/10, Grok 4.6 errored.
+
+## Grok diagnosis (October 31, 2026 UTC, after the second batch)
+
+The Grok error was investigated the same evening with private probe
+tasks (since removed from use; Kaggle does not yet support task
+deletion server-side, so they remain as private tasks on the
+account). Findings:
+
+- A one-word plain-text probe ("Reply with exactly one word:
+  SIGNAL", no structured output, no packet) errors identically for
+  Grok 4.6, and Grok 4.5 (run slug grok-4.5-0708) errors the same
+  way: the run binds its model-proxy session and ends ERRORED
+  before the notebook produces any output or exception.
+- The same probes and the full task run cleanly for the Gemini,
+  Claude, and GPT models on the same account in the same hour.
+
+Conclusion of record: the failure is in the Grok leg of Kaggle's
+Model Proxy, not in this task. Nothing in the task can fix it. The
+Grok arm stands recorded as ERRORED and will be re-run when the
+endpoint recovers; a recovered run will be appended here, never
+substituted silently.
