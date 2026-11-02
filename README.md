@@ -77,6 +77,23 @@ Three minutes, two falsifiable moments. First, the product grades a sealed demo 
 - `freeze/` — the freeze receipts: freeze manifest, per-packet hash manifest (`.md` and `.jsonl`), and the null document.
 - `demo-set/` — the sealed demo set: 10 packets from the live EDGAR feed of October 26, 2026, plus its manifest. The labels are sealed by hash in the manifest and never ship.
 
+## The public benchmark: Filing Signal demonstration slice (Kaggle)
+
+The sealed demo set above runs in public on Kaggle Community Benchmarks, graded against the key committed by sha256 on October 26, 2026, before any model ran. Results, runs of October 30-31, 2026:
+
+| Model | Score |
+|---|---|
+| Gemini 3.1 Pro | 9 / 10 |
+| Gemini 3.8 Flash | 9 / 10 |
+| Claude Sonnet 5 | 8 / 10 |
+| GPT-6.1 Sol | 8 / 10 |
+| Claude Opus 5.5 | 7 / 10 |
+| Grok 4.6 | errored (Kaggle's Model Proxy returns a 404 for its model id; re-checked November 2, 2026; an errored arm, not a zero) |
+
+All five scored models missed the same filing: a Northern Trust Form 144 whose answer sits in the pattern, not on the document surface. Full run record: [KAGGLE-DEMO-SLICE-RUNS-2026-10-30.md](KAGGLE-DEMO-SLICE-RUNS-2026-10-30.md). The task, re-runnable by anyone: https://www.kaggle.com/benchmarks/tasks/constantinevassilev/filing-signal-demonstration-slice/2
+
+What the results mean, and what asking a model yourself actually costs: https://atlas7.app/why-not-a-model
+
 ## Links and receipts
 
 - **Freeze of record:** commit 834454df, repository aitrailblazer/coordination, path hackathon/open-model-grading/ (freeze manifest, freeze pack, per-packet hash manifest for all 179 packets and the null document, demo grading prompt).
