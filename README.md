@@ -94,6 +94,25 @@ All five scored models missed the same filing: a Northern Trust Form 144 whose a
 
 What the results mean, and what asking a model yourself actually costs: https://atlas7.app/why-not-a-model
 
+## What DeltaSignal returned, item by item
+
+The DeltaSignal column is the graded key itself, committed by hash on October 26, 2026, before any model ran. It is the reference the models were scored against, not a contestant's score.
+
+| Filing | Form | DeltaSignal | Gemini 3.1 Pro | Gemini 3.8 Flash | Claude Sonnet 5 | GPT-6.1 Sol | Claude Opus 5.5 |
+|---|---|---|---|---|---|---|---|
+| 0001049521-26-000085 | 4 | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+| 0001104659-26-118550 | 8-K | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL |
+| 0001104659-26-118565 (Jersey Mike's) | Schedule 13G | NO SIGNAL | NO SIGNAL | NO SIGNAL | SIGNAL | SIGNAL | ABSTAIN |
+| 0001104659-26-118593 | DEFA14A | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL |
+| 0001171843-26-006796 (Nanobiotix) | 6-K | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL | ABSTAIN |
+| 0001193125-26-430860 | 8-K | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL |
+| 0001193125-26-430977 | 8-K | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL | SIGNAL |
+| 0001628280-26-067128 | 4 | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+| 0001959173-26-007482 (Quest Diagnostics) | 144 | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+| 0001959173-26-007483 (Northern Trust) | 144 | SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL | NO SIGNAL |
+
+Read across a row, agreement is the rule. The splits sit exactly where the answer is not on the document's surface: the passive Jersey Mike's 13G, where two models said SIGNAL and one abstained against a NO SIGNAL key, and the Northern Trust Form 144, where all five read routine paper against the desk's SIGNAL. Grok 4.6 produced no verdicts (errored arm, above).
+
 ## Links and receipts
 
 - **Freeze of record:** commit 834454df, repository aitrailblazer/coordination, path hackathon/open-model-grading/ (freeze manifest, freeze pack, per-packet hash manifest for all 179 packets and the null document, demo grading prompt).
