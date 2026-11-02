@@ -118,3 +118,7 @@ Model Proxy, not in this task. Nothing in the task can fix it. The
 Grok arm stands recorded as ERRORED and will be re-run when the
 endpoint recovers; a recovered run will be appended here, never
 substituted silently.
+
+## Re-probe, November 2, 2026
+
+At the owner's direction the Grok arm was re-attempted. The one-word probe task (grok-probe-tiny) ran against grok-4.6 on 2026-11-02 (submitted 18:28:42Z, run 18:29:31-18:29:32Z, Run ID 5852810) and ERRORED before any verdict, as on October 30/31. Kaggle now surfaces the underlying error verbatim: openai.NotFoundError, 404, 'The requested model "xai/grok-4.6" was not found.' The catalog lists the model; the Model Proxy backend returns 404 for its id. The October 31 Grok 4.5 probe carries the identical error for "xai/grok-4.5-0708". The failure remains Grok-specific and Kaggle-side. The slice was not run. Grok 4.6 stands as an errored arm. Re-attempt only when the proxy stops returning 404 for the model id.
